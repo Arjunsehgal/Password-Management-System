@@ -11,6 +11,7 @@ var PasswordCategoryRouter = require('./routes/PasswordCategory');
 var addNewPasswordRouter = require('./routes/add-new-password');
 var viewAllPasswordRouter = require('./routes/view-all-password');
 var PasswordDetailRouter = require('./routes/password-detail');
+var joinRouter = require('./routes/join');
 var usersRouter = require('./routes/users');
 const flash = require('flash');
 
@@ -33,6 +34,7 @@ app.use('/PasswordCategory',PasswordCategoryRouter);
 app.use('/add-new-password',addNewPasswordRouter);
 app.use('/view-all-password',viewAllPasswordRouter);
 app.use('/password-detail',PasswordDetailRouter);
+app.use('/joinResult', joinRouter);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
